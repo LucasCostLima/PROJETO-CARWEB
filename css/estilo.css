@@ -28,17 +28,23 @@ h1 {
 #area-principal {
     width: 920px;
     margin: 0 auto;
+    padding: 15px;
+}
+.postagem-lateral {
+    font-size: 0.8em;
+    padding: 5px;
+   /* border-bottom: 1px dotted #CCC;*/
 }
 
-#area-postagem {
-    width: 660px;
-    float: left;
-}
 #area-lateral {
     width: 240px;
     float: right;
-    padding: 10px;
 }
+#area-postagens {
+    width: 660px;
+    float: left;
+}
+
 
 .conteudo-lateral{
     background: red;
