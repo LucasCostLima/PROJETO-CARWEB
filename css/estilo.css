@@ -45,6 +45,12 @@ h1 {
     float: left;
 }
 
+.postagem {
+    padding: 20px;
+    margin-bottom: 20px;
+    background: white;
+}
+
 
 .conteudo-lateral{
     background: red;
