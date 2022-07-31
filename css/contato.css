@@ -1,0 +1,165 @@
+/*Contato*/
+
+/* Google Font CDN Link */
+@import url('https://font.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-size: "Poppins", sans-serif ;
+}
+
+body {
+   min-height: 100vh; 
+   width: 100%;
+   background: ivory;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.container{
+    width: 85%;
+    background: #0489B1;
+    border-radius: 6px;
+    padding: 20px 60px 30px 40px;
+    box-shadow: 0 5px 10px rgba(0,0,0, 0.2);
+}
+
+.container .conteudo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container .conteudo .lado-esquerdo{
+    width: 25%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    position: relative;
+}
+.conteudo .lado-esquerdo:before{
+    content: '';
+    position: absolute;
+    height: 70%;
+    width: 2px;
+    right: -15px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: #0489B1;
+}
+
+.conteudo .lado-esquerdo .detalhes-endereço{
+    margin: 14px;
+    text-align: center;
+}
+
+.conteudo .lado-esquerdo .detalhes-endereço{
+    font-size: 30px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.conteudo .lado-esquerdo .detalhes-endereço .topic{
+    font-size: 18px;
+    font-weight: 500;
+}
+.conteudo .lado-esquerdo .detalhes-endereço .text-one,
+.conteudo .lado-esquerdo .detalhes-endereço .text-two{
+    font-size: 14px ;
+    color: black  ;
+}
+
+.container .conteudo .lado-direito{
+    width: 75%;
+    margin-left: 75px;
+}
+
+.conteudo .lado-direito .topic-box{
+    font-size: 23px;
+    font-weight: 600;
+    color: red;
+}
+
+.lado-direito .input-box{
+    height: 50px;
+    width: 100%;
+    margin: 12px 0;
+}
+
+.lado-direito .input-box input,
+.lado-direito .input-box textarea{
+    height: 100%;
+    width: 100%;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    background: #f0f1f8;
+    border-radius: 6px;
+    padding: 0 15px;
+    resize: none;
+}
+
+.lado-direito .message-box{
+    min-height: 6px;
+}
+
+.lado-direito .input-box .textarea{
+    padding-top: 6px;
+}
+
+.lado-direito .button input[type="button"]{
+    color: #0489B1;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 6px;
+    background: #f0f1f8;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.lado-direito .button input[type="button"]:hover{
+    background: #f0f1f8;
+}
+
+@media (max-widht: 950px){
+    .container{
+        width: 90%;
+        padding: 30px 40px 40px 35px;
+    }
+    .container .conteudo .lado-direito{
+        width: 75%;
+        margin-left: 55px;
+    }
+}
+
+@media (max-widht: 820px){
+    .container{
+        margin: 40px 0;
+        height: 100%;
+    }
+    .container .conteudo{
+        flex-direction: column-reverse;
+    }
+    .container .container .lado-esquerdo{
+        width: 100%;
+        flex-direction: row;
+        margin-top: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    .container .conteudo .lado-esquerdo:before{
+        display: none;
+    }
+    .container .conteudo .lado-direito{
+        width: 100%;
+        margin-left: 0;
+    }
+}
